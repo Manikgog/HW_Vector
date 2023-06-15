@@ -32,19 +32,19 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	SetConsoleCP(1251);
 
-	//TestVector();
-	//// testing of overloading << operator
-	//Vector v;
-	//v.Push_Back(1);
-	//v.Push_Back(2);
-	//v.Push_Back(3);
-	//v.Push_Back(4);
-	//v.Push_Back(5);
-	//v.Push_Back(6);
-	//v.Push_Back(7);
-	//v.Push_Back(8);
-	//std::cout << v;
-
+	TestVector();
+	// testing of overloading << operator
+	Vector v;
+	v.Push_Back(1);
+	v.Push_Back(2);
+	v.Push_Back(3);
+	v.Push_Back(4);
+	v.Push_Back(5);
+	v.Push_Back(6);
+	v.Push_Back(7);
+	v.Push_Back(8);
+	std::cout << v;
+	// testing of overloading >> operator
 	Vector v1;
 	std::cin >> v1;
 	std::cout << v1;

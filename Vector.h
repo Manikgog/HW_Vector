@@ -46,7 +46,7 @@ public:
 
 	long long int* End();
 
-	/*void operator<<(std::ostream& output);*/
+	friend std::ostream& operator<<(std::ostream& output, const Vector& v);
 
 	long long int& operator[](int index);
 

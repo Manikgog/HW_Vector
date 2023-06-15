@@ -203,10 +203,8 @@ long long int* Vector::End()
 	return _massive + _size;
 }
 
-//
-//void Vector::operator<<(std::ostream& output) {
-//	output << _massive;
-//}
+
+
 
 
 long long int& Vector::operator[](int index)
@@ -226,15 +224,15 @@ Vector::~Vector()
 		delete[] _massive;
 }
 
-//
-//Vector* Vector::operator=(const Vector& v)
-//{
-//	if (_massive)
-//		delete[] _massive;
-//	_size = v._size;
-//	_massive = new long long int[v._size];
-//	for (int i = 0; i < _size; ++i)
-//	{
-//		_massive[i] = v._massive[i];
-//	}
-//}
+
+std::ostream& operator<<(std::ostream& output, const Vector& v) {
+	bool is_first = true;
+	for (size_t i = 0; i < v._size; ++i)
+	{
+		if (!is_first)
+			output << ", ";
+		is_first = false;
+		output << v._massive[i];
+	}
+	return output;
+}

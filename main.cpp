@@ -24,6 +24,8 @@ void TestVector()
 	TestBegin();
 	TestEnd();
 	TestOperatorEqual();
+	TestOperatorSumming();
+	TestOperatorAssign();
 }
 
 int main() {
@@ -31,6 +33,16 @@ int main() {
 	SetConsoleCP(1251); // установка кодовой страницы на ввод текста
 
 	TestVector();
-	
+
+	/*Vector v;
+	v.Push_Back(1);
+	v.Push_Back(2);
+	v.Push_Back(3);
+	v.Push_Back(4);
+	v.Push_Back(5);
+	v.Push_Back(6);
+	v.Push_Back(7);
+	v.Push_Back(8);
+	std::cout << v;*/
 	return 0;
 }

@@ -2,6 +2,7 @@
 #define _VECTOR_H_
 
 #include <iostream>
+#include <string>
 
 
 class Vector
@@ -47,6 +48,8 @@ public:
 	long long int* End();
 
 	friend std::ostream& operator<<(std::ostream& output, const Vector& v);
+
+	friend std::istream& operator>>(std::istream& in, Vector& v);
 
 	long long int& operator[](int index);
 

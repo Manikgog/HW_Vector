@@ -34,7 +34,7 @@ int main() {
 
 	TestVector();
 	// testing of overloading << operator
-	/*Vector v;
+	Vector v;
 	v.Push_Back(1);
 	v.Push_Back(2);
 	v.Push_Back(3);
@@ -43,7 +43,7 @@ int main() {
 	v.Push_Back(6);
 	v.Push_Back(7);
 	v.Push_Back(8);
-	std::cout << v;*/
+	std::cout << v;
 	// testing of overloading >> operator
 	Vector v1;
 	std::cin >> v1;
